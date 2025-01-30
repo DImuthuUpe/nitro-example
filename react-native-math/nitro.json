@@ -12,7 +12,11 @@
     ],
     "androidCxxLibName": "NitroMath"
   },
-  "autolinking": {},
+  "autolinking": {
+    "Math": {
+      "cpp": "HybridMath"
+    }
+  },
   "ignorePaths": [
     "**/node_modules"
   ]
