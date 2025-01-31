@@ -29,6 +29,7 @@ public class NitroMathPackage extends TurboReactPackage {
   }
 
   static {
-    NitroMathOnLoad.initializeNative();
+    System.loadLibrary("NitroMath");
+    //NitroMathOnLoad.initializeNative();
   }
 }

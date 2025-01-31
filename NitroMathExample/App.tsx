@@ -16,6 +16,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import { MathModule } from 'react-native-math';
 
 import {
   Colors,
@@ -62,6 +63,7 @@ function App(): React.JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
+  const res = MathModule.add(1, 2);
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
@@ -77,7 +79,7 @@ function App(): React.JSX.Element {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
+            Edit <Text style={styles.highlight}>App.tsx</Text> to { res } change this
             screen and then come back to see your edits.
           </Section>
           <Section title="See Your Changes">
